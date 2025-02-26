@@ -60,7 +60,7 @@ app.get("/bank-data", (req, res) => {
         ],
     };
 
-    res.status(200).json({ success: true, code: 200, data: [bankData] });
+    res.status(200).json({ success: true, code: 200, data: bankData });
 });
 
 app.listen(3000, () => console.log("App is running at 3000"));
